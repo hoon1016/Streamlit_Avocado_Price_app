@@ -11,3 +11,19 @@ import h5py
 from tensorflow.keras.callbacks import ModelCheckpoint,CSVLogger
 import pickle
 import streamlit as st 
+
+def main():
+    avocado_df=pd.read_csv('data/avocado.csv')
+    st.title('아보카도 가격 예측기 앱')
+    st.dataframe(avocado_df.head())
+
+
+
+
+
+
+
+
+
+if __name__=='__main__':
+    main()
